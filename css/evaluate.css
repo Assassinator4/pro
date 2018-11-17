@@ -1,0 +1,37 @@
+/*
+*banner
+*/
+.top_photo{
+    width: 100%;
+    height: 600px;
+}
+.top_photo img{
+    width: 120%;
+    height: 100%;
+    margin-left: -10%;
+}
+/*
+*朋友圈晒图
+*/
+.haoping_photo{
+    text-align: center;
+    width: 100%;
+    background: #F3F3F3;
+}
+.ga_wrap{
+    margin: 0 auto;
+    width: 1200px;
+}
+.ga_wrap span{
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+.ga_wrap a{
+    margin: 10px 8px;
+    display: inline-block;
+}
+.ga_wrap a img{
+    width: 200px;
+    height: 200px;
+}

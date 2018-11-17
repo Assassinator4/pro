@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.youhui2018big {
+    width: 1000px;
+    margin: 10px auto 30px auto;
+    position: relative;
+}
+.youhui2018 {
+    width: 1000px;
+    margin: 40px auto 40px auto;
+}
+.youhui2018 img {
+    width: 1000px;
+    height: 469px;
+}
+.youhui2018:hover img,.youhui2018 div {
+    transition: all 2s;
+    color: red;
+    transform:rotate(1deg) scale(1.02) !important;
+}
+.youhui2018box,.youhui2018box1,.youhui2018hot {
+    height: 60px;
+    border-bottom: 2px #7BCEEC solid;
+    background-color: #fff;
+    line-height: 60px;
+    font-size: 18px;
+    text-align: center;
+}
+.span1 {
+    width: 150px;
+    height: 300px;
+    display: inline-block;
+    background: url("../images/ad.png");
+    position: fixed;
+    top: 150px;
+    /*margin-top: -150px;*/
+}
+.span1 img {
+    width: 5px;
+    height: 5px;
+    float: right;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}

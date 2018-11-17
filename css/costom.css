@@ -1,0 +1,328 @@
+
+.costom-header {
+  width: 100%;
+}
+
+.costom-header-pic img {
+  margin-right: 30px;
+  width: 1400px;
+  height: 400px;
+  line-height: 200px;
+  display: inline-block;
+}
+
+/*分割线*/
+.achead {
+  margin-top: 15px;
+  height: 150px;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+  /*border-top: 2px solid #ccc;*/
+}
+
+.achead ul {
+  overflow: hidden;
+  width: 1200px;
+  height: 146px;
+  margin: 0 auto;
+}
+
+.achead ul > li {
+  float: left;
+  height: 115px;
+  width: 400px;
+  margin: 20px 0 20px 0;
+  padding: 0 30px 0 30px;
+  border-right: 1px #ddd solid;
+  overflow: hidden;
+}
+
+.achead ul > li a img {
+  width: 115px;
+  height: 115px;
+  float: left;
+  margin-right: 10px;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.achead .kpli a img {
+  position: absolute;
+  right: 0;
+  opacity: 1;
+  transition: all 2s;
+}
+
+.achead ul > li img:hover, .achead .kpli a img:hover {
+  opacity: 0.7;
+}
+
+.achead ul li h4 {
+  display: block;
+  color: #3089a8;
+  font-size: 18px;
+}
+
+.achead ul p {
+  /*font-weight: bold;*/
+  color: #C31;
+  font-size: 22px;
+}
+
+.achead ul li span {
+  color: #888;
+  display: block;
+}
+
+.kpli {
+  position: relative;
+  float: left;
+  height: 110px;
+  width: 358px;
+  margin: 20px 0 20px 0;
+  padding: 0 30px 0 30px;
+  overflow: hidden;
+}
+
+.kpli p:first-letter {
+  font-size: 60px;
+}
+
+/*旋转木马*/
+
+.costom-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.costom-logo {
+  width: 100%;
+  /*background-color: #D73D32;*/
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.costom-ul {
+  margin: 0 auto;
+  width: 1000px;
+  list-style: none;
+  position: relative;
+}
+
+.costom-ul li {
+  width: 500px;
+  height: 390px;
+  position: absolute;
+  left: 200px;
+  top: 0;
+}
+
+/*.product-ul ul>li:nth-child(3){
+  z-index: 3;
+}*/
+.costom-ctl {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 998;
+}
+
+.costom-ctl .prev,
+.costom-ctl .next {
+  width: 76px;
+  height: 112px;
+  position: absolute;
+  top: 50%;
+  margin-top: -56px;
+  cursor: pointer;
+
+}
+
+.costom-ctl .prev {
+  background: url("../images/product-img/prev.png") no-repeat;
+  left: 0;
+}
+
+.costom-ctl .next {
+  background: url("../images/product-img/next.png") no-repeat;
+  right: 0;
+}
+
+/*分割线*/
+
+.costom-kp {
+  border-top: 2px dashed #86CCE8;
+  padding: 22px 0 23px 0;
+  text-align: center;
+  height: 123px;
+}
+
+/*客片展示*/
+.costom-wrap {
+  max-width: 1260px;
+  height: 1500px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+/*.costom-wrap-big{*/
+/*padding-bottom: 20px;*/
+/*}*/
+.costom-wrap-big li {
+  width: 295px;
+  height: 478.5px;
+  float: left;
+  margin: 10px;
+  background: #fff;
+  position: relative;
+}
+
+.costom-wrap-big a {
+  color: #0D5147;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.costom-wrap-big a img {
+  width: 295px;
+  height: 442.5px;
+}
+
+.costom-wrap-big p {
+  width: 295px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 0 10px 0 10px;
+  border-right: 1px #eee dotted;
+  border-bottom: 1px #eee solid;
+}
+
+.costom-wrap-big p i {
+  margin-top: 3px;
+  float: right;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.costom-wrap-big p:hover a {
+  color: #F59C85;
+}
+
+.costom-wrap span {
+  width: 295px;
+  height: 441px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: #ADB27A;
+  opacity: 0.3;
+  display: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.costom-wrap span a {
+  display: inline-block;
+  font-size: 21px;
+  position: absolute;
+  bottom: 100px;
+  left: 60px;
+  color: #fff;
+  opacity: 1;
+  z-index: 1;
+}
+
+.kpbottoms {
+  width: 800px;
+  height: 26px;
+  line-height: 22px;
+  font-size: 15px;
+  color: #aaa;
+  margin: 10px auto;
+  text-align: center;
+  padding-top: 6px;
+
+}
+
+.costom-kpbottom {
+  width: 800px;
+  height: 30px;
+  line-height: 22px;
+  text-align: center;
+  margin: 71px auto;
+  /*background-color: #f09;*/
+}
+
+/*小按钮*/
+.costom-mpage {
+  width: 100%;
+  height: 20px;
+  margin: 66px auto;
+  line-height: 20px;
+}
+
+.costom-mpage ul {
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  text-align: center;
+}
+
+.costom-mpage .ppage {
+  width: 25px;
+  height: 10px;
+  padding: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 3px ;
+  border-radius: 50%;
+  /*float: left;*/
+  display: inline-block;
+  border: 1px solid #2CA0C2;
+  background-color: #2CA0C2;
+  position: relative;
+
+}
+.costom-mpage .ppind{
+  border: 1px solid #FF283C;
+  background: #FF283C;
+}
+
+.costom-mpage .ppage  a {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  right: 6px;
+  top: 15px;
+  color: #FFF;
+  text-align: center;
+  line-height: 3px ;
+}
+.costom-mpage .pnext{
+  width: 100px;
+  height: 33px;
+  background-color: #2CA0C2;
+  border: 1px solid #2CA0C2;
+  border-radius:48%;
+  display: inline-block;
+  position: relative;
+}
+.costom-mpage .pnext a{
+  position: absolute;
+  text-align: center;
+  line-height: 51px;
+  right: 24px;
+  top: -9px;
+  color: #FFF;
+}
+.costom-mpage .hover{
+  border: 1px solid #FF283C;
+  background: #FF283C;
+}

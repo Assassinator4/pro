@@ -1,0 +1,620 @@
+/*
+主颜色：#53accb  蓝色
+wicth：1520px
+*/
+body {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+/*
+*头部样式和导航栏样式
+*/
+.header {
+    width: 100%;
+    height: 80px;
+    display: none;
+}
+
+.head {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    /*add*/
+    z-index: 998;
+}
+
+.logo {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -60px;
+}
+.logo img{
+    width: 180px;
+    height: 200px;
+}
+.gudinig{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -60px;
+    width: 180px;
+    height: 200px;
+}
+.head .nav {
+    width: 100%;
+    height: 80px;
+    background: #53accb;
+    text-align: center;
+    z-index: 1;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+    color: #F1F1F4;
+}
+
+.nav ul {
+    list-style: none;
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.nav ul > li {
+    width: 10%;
+    height: 100%;
+    float: left;
+    line-height: 70px;
+    font-size: 18px;
+    border-right: 1px solid #3089a8;
+}
+
+/*.nav ul > li:nth-child(8) {
+    border-right: none;
+}*/
+
+.nav ul > li:nth-child(5) {
+    border-right: none;
+}
+
+.nav ul > li span {
+    font-size: 12px;
+    line-height: 0px;
+    font-weight: normal;
+    position: relative;
+    top: -10px;
+    display: block;
+}
+
+.nav ul>li a {
+    color: antiquewhite;
+    float: left;
+    height: 56px;
+    width: 116px;
+    position: relative;
+    padding-top: 4px;
+}
+
+/*鼠标移入导航栏样式*/
+.on {
+    border-top: 3px solid #f2fb31;
+    background-color: #3089a8;
+}
+
+.sec {
+    background: antiquewhite;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    display: none;
+    width: 100%;
+    height: 120px;
+}
+
+.nav ol {
+    text-align: center;
+    position: relative;
+}
+
+.nav ol > li {
+    float: left;
+    width: 120px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-200%);
+    top: 10px;
+    border: 5px solid antiquewhite;
+    overflow: hidden;
+}
+
+.nav ol > li img {
+    width: 110px;
+    height: 90px;
+    /*transition: all 1s ;*/
+    -webkit-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.nav ol > li img:hover {
+    transform: scale(1.2);
+}
+
+
+/*
+*baner(轮播图)
+*/
+.banner{
+    width: 100%;
+    height: 550px;
+    border: 1px solid #CCCCCC;
+    overflow: hidden;
+    position: relative;
+}
+.banner ul{
+    width: 500%;
+    height: 100%;
+    position: relative;
+}
+.banner ul>li{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.banner img{
+    width: 100%;
+    height: 550px;
+}
+.banner p{
+    display: block;
+    width: 80%;
+    height: 120px;
+    position: absolute;
+    margin-left: 50%;
+    left: -40%;
+    top: 200px;
+    color: white;
+    font-size: 90px;
+    line-height: 120px;
+    z-index: 2;
+}
+
+.banner span{
+    display: none;
+    width: 120px;
+    height: 120px;
+    background: #333333;
+    text-align: center;
+    opacity: 0.6;
+    transition: all 1s ;
+    cursor: pointer;
+}
+.banner span:hover{
+    opacity: 1;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.banner ol{
+    position: absolute;
+    margin-left: 50%;
+    left: -80px;
+    bottom: 30px;
+    z-index: 2;
+}
+.banner ol>li{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid #3C3C3C;
+    float: left;
+    background: #13bbfb;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.banner .active{
+    background: #eafb1a;
+}
+
+/*
+*sky-bg
+*三张照片覆盖背景图
+*/
+.sky-bg{
+    width: 100%;
+    height: 1000px;
+    background: url("../images/bg01.jpg") no-repeat bottom center;
+}
+.over-sky{
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.over-sky ul{
+    width: 100%;
+}
+.over-sky ul>li{
+    overflow: hidden;
+    float: left;
+    width: 385px;
+    height: 577px;
+    position: relative;
+}
+.over-sky .sky-title{
+    position: absolute;
+    z-index: 2;
+    font-size: 26px;
+    margin-left: 50%;
+    left: -52px;
+    margin-top: 60%;
+    display: none;
+}
+.over-sky .dark{
+    position: absolute;
+    opacity: 0;
+    transition: all 1.5s;
+    text-align: center;
+}
+.over-sky .light{
+    opacity: 1;
+    transition: all 1s ;
+}
+.over-sky ul>li :hover .dark,.over-sky ul>li a:hover .sky-title{
+    opacity: 1;
+    display: inline-block;
+    /*color: #3185fb;*/
+    color: #CCCCCC;
+}
+/*.over-sky .light :hover {
+    transform: scale(2);
+}*/
+/*.over-sky ul>li :hover .light{*/
+    /*opacity: 0;*/
+/*}*/
+.l1{
+    border: 20px solid #dddddd;
+}
+.l2{
+    border: 20px solid #777777;
+}
+.over-sky img{
+    width: 345px;
+    height: 537px;
+}
+
+/*
+*分割线
+*/
+.achead {
+    height: 150px;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+}
+.achead ul {
+    overflow: hidden;
+    width: 1200px;
+    height: 146px;
+    margin: 0 auto;
+}
+.achead ul>li {
+    float: left;
+    height: 115px;
+    width: 400px;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 30px 0px 30px;
+    border-right: 1px #ddd solid;
+    overflow: hidden;
+}
+.achead ul>li a img{
+    width: 115px;
+    height: 115px;
+    float: left;
+    margin-right: 10px;
+    opacity: 1;
+    transition: all 1s ;
+}
+.achead .kpli a img{
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    transition: all 1s ;
+}
+.achead ul>li img:hover,.achead .kpli a img:hover{
+    opacity: 0.7;
+}
+.achead ul li h4 {
+    display: block;
+    color: #3089a8;
+    font-size: 18px;
+}
+.achead ul p {
+    line-height: 55px;
+    color: #C31;
+    font-size: 21px;
+}
+.achead ul li span {
+    color: #888;
+    display: block;
+}
+
+.kpli {
+    position: relative;
+    float: left;
+    height: 110px;
+    width: 358px;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 30px 0px 30px;
+    overflow: hidden;
+}
+
+.kpli p:first-letter{
+    font-size: 60px;
+}
+/*
+*vidoe
+*/
+
+.video_wrap {
+    width: 100%;
+    height: 780px;
+}
+.container {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 780px;
+    text-align: center;
+}
+.container video{
+    width: 100%;
+}
+.video-content{
+    text-align: center;
+    margin-left: 50%;
+    left: -155px;
+    width: 310px;
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.link{
+    margin-top: 500px;
+}
+.link a{
+    border: 2px solid rgba(255,255,255,0.20);
+    border-radius: 61px;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.info {
+    color: rgba(255,255,255,0.5);
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+/*
+*kbig-bg 作品集
+*/
+.kbig-bg{
+    width: 100%;
+    background: #eeeeee;
+    border-bottom: 2px solid #CCCCCC;
+}
+.kbig-wrap{
+    margin: 0 auto;
+    width: 1300px;
+    height: 1550px;
+}
+.kbig-ul{
+    padding-top: 50px;
+    width: 100%;
+}
+.kbig-ul>li{
+    float: left;
+    width: 300px;
+    height: 476px;
+    margin: 10px 12px;
+    position: relative;
+}
+.kbig-ul>li img{
+    width: 300px;
+    height: 440px;
+}
+.kbig-ul>li p{
+    width: 300px;
+    height: 36px;
+    display: inline-block;
+    line-height: 36px;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 0px 10px 0px 10px;
+    border-right: 1px #eee dotted;
+    border-bottom: 1px #eee solid;
+    background: #ffffff;
+
+}
+.kbig-ul>li a{
+    color: #333333;
+}
+.kbig-ul>li a:hover{
+    color: #13bbfb;
+}
+.kbig-ul>li a i:hover{
+    color: #999999;
+}
+.kbig-ul>li i{
+    float: right;
+}
+.kbig-bg ul>li .dask{
+    position: absolute;
+    opacity: 0;
+    transition: all 1.5s ;
+    text-align: center;
+}
+.kbig-ul .kbig-bg-title{
+    position: absolute;
+    z-index: 2;
+    font-size: 24px;
+    text-align: center;
+    left: 20%;
+    margin-top: 70%;
+    display: none;
+}.kbig-ul .kbig-bg-title h3{
+     font-size: 18px;
+ }
+.kbig-bg ul>li:hover .dask,.kbig-ul :hover .kbig-bg-title{
+    opacity: 0.7;
+    display: inline-block;
+    /*color: #3185fb;*/
+    color: #CCCCCC;
+}
+.kpbottom {
+    width: 800px;
+    line-height: 22px;
+    height: 26px;
+    font-size: 12px;
+    color: #aaa;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*
+*飘动画
+*/
+.piao-active{
+    background: url("../images/acbg3.jpg")no-repeat center top #F3F3F3;
+    width: 100%;
+    height: 1100px;
+    border-bottom: 2px solid #CCCCCC;
+}
+.Vblock{
+    margin: 0 auto;
+    width: 942px;
+    height: 100%;
+}
+.Vblock2{
+    width: 314px;
+    height: 397px;
+    float: left;
+    padding: 600px 25px 40px 0px;
+}
+.Vblock2 a{
+    width: 314px;
+    height: 397px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.piao-active .Vblock2 .vimg{
+    position: absolute;
+    top: 0;
+    transition: all 0.8s;
+}
+.piao-active .Vblock2 :hover .vimg{
+    top: -300px;
+}
+.piao-active h5{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 314px;
+    height: 397px;
+    z-index: 3;
+}
+.piaoA{
+     background: url(../images/piao/Vblock2_a.png) no-repeat;
+ }
+.piaoB{
+    background: url(../images/piao/Vblock2_b.png) no-repeat;
+}
+.piaoC{
+    background: url(../images/piao/Vblock2_c.png) no-repeat;
+}
+.piao-active h3{
+    position: absolute;
+    left: 0px;
+    top: 368px;
+    width: 314px;
+    font-size: 16px;
+    z-index: 4;
+    text-align: center;
+}
+.piao-active a:hover{
+    color: #f2fb31;
+}
+/*
+*底部样式
+*/
+.footer{
+    padding-top: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+.footer ul {
+    margin: 0 auto;
+    width: 900px;
+    height: 120px;
+}
+
+.footer ul>li {
+    float: left;
+    width: 20%;
+}
+
+.footer ul>li ol>li{
+    padding-top: 5px;
+}
+.footer ul>li ol>li a{
+    color: #aaa;
+}
+.footer a:hover{
+    color: #333;
+}
+/*
+*底部版权
+*/
+.copy{
+    margin-top: 20px;
+    width: 100%;
+    height: 230px;
+    background: #86CFE1;
+}
+.copyright{
+    margin-left: 20%;
+    padding-top: 20px;
+    text-align: center;
+    width: 900px;
+    height: 130px;
+}
+.copyright p,a{
+    color: #F1F1F4;
+}
+.copyright a:hover{
+    color: #f2fb31;
+}
+.footer-Photo{
+    width: 100%;
+    text-align: center;
+}
+.footer-Photo img{
+    height: 64px;
+}
