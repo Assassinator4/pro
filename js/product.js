@@ -1,17 +1,17 @@
 // 产品头部
 $(function () {
-    //首图
-    $(".product-location-ul>li").each(function () {
-        // var index = $(this).index();
-
+    //重定义
+    $(".city-ul>li").each(function () {
         $(this).hover(function () {
-            $(this).find("span").stop().animate({"top": 0})
-        }, function () {
 
-            $(this).find("span").stop().animate({"top": 501})
+            $(this).find("span").stop().slideUp();
+            $(this).find("i").stop().animate({opacity:1},1200);
+        }, function () {
+            $(this).find("span").stop().slideDown();
+            $(this).find("i").stop().animate({opacity:0});
+            });
         })
 
-    })
 
 
     //图片展示
@@ -64,14 +64,9 @@ $(function () {
         $(this).find("span").fadeOut(1000);
     })
 
-//图片懒加载
-// 1.当点击a标签,就加载新的li;
-
-    // $(".product-loadmore .main").click(function () {
-    //   // console.log("---");
-    //
-    // })
+     //图片懒加载
 
 
-});
+
+})
 
