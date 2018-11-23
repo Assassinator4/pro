@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>优惠活动</title>
-    <link rel="stylesheet" href="css/huiyouhuodong.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/onSale.css">
@@ -133,18 +132,17 @@
 </div>
 
 <!--广告-->
-<span class="left span1"><img src="images/close.png" class="close"></span>
-<span class="right span1"><img src="images/close.png" class="close"></span>
+<span class="left span1"><img src="images/guang1.jpg" class="close"></span>
+<span class="right span2"><img src="images/guang2.jpg" class="close"></span>
 <!--广告-end-->
 
 <!--公共尾部-->
 <div class="centent">
 
-
-
-
-
-
+    <!--星星海特效-->
+    <div id="main">
+        <span class="star"></span>
+    </div>
 
 
 </div>
@@ -328,7 +326,39 @@
                 $(this).remove()
             });
         },newOne);
+    };
+
+    /* 星星特效 */
+    var main = document.getElementById('main');
+
+    // 获取浏览器可视区域的宽度和高度
+    var screenW = document.documentElement.offsetWidth;
+    var screenH = document.documentElement.offsetHeight;
+    //    alert(screenW + ',' + screenH);
+
+    // 1.创建星星
+    for ( var i = 0; i<250; i++) {
+        // 1.创建星星
+        var star = document.createElement('span');
+        star.className = 'star';
+        // 2.添加星星
+        main.appendChild(star);
+
+        // 3.位置随机 0-1
+        var x = Math.random() * screenW;
+        var y = Math.random() * screenH;
+        star.style.left = x + 'px';
+        star.style.top = y + 'px';
+
+        // 4.大小随机
+        var scale = Math.random() * 1.5;
+        star.style.transform = 'scale('+ scale +')';
+
+        // 5.动画延迟
+        var del = Math.random();
+        star.style.animationDelay = del + 's';
     }
+
 
 </script>
 </body>

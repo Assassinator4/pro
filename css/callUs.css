@@ -49,6 +49,7 @@
 /*联系我们CSS*/
 body {
     /*background: #ccc;*/
+    color: #555;
 }
 .hengqie {
     width: 1030px;
@@ -201,6 +202,7 @@ body {
     border-bottom: 2px solid blue;
     background-color: #eee;
     text-align: center;
+    color: #f00;
 }
 .ad {
     position: fixed;
@@ -216,4 +218,156 @@ body {
     transform: rotate(360deg);
     transition: all 2s;
     transform:translate(100px,0)
+}
+
+/*bye*/
+#box {
+    width: 602px;
+    height: 302px;
+    margin: 100px auto;
+    border: 1px solid #000;
+}
+#box ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+#box ul li {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: url("../images/hello.jpg") no-repeat;
+    position: relative;
+}
+
+
+/* MY TEAM */
+.about_cont {
+    width: 100%;
+}
+#team_cont {
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+}
+.wd1350 {
+    width: 1350px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+#team_cont h6 {
+    position: absolute;
+}
+#team_cont .left_nav {
+    width: 125px;
+    display: block;
+    position: absolute;
+    margin-top: 78px;
+    z-index: 1;
+}
+
+.left_nav ul .in {
+    color: #b60000;
+}
+#team_cont .left_nav li:before {
+    content: " ";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+#team_cont .left_nav li {
+    display: block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    /*color: #999;*/
+}
+#right_banner {
+    width: 1225px;
+    position: relative;
+    left: -1%;
+}
+.syslideBox {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#team_cont .syslideBox {
+    width: 100%;
+}
+#team_cont .syslideBox .left_scroll {
+    width: 175px;
+    max-width: 14.3%;
+}
+.syslideBox .left_scroll {
+    margin-top: 50px;
+    position: relative;
+    width: 300px;
+    height: 534px;
+    max-width: 22%;
+}
+.syslideBox .left_scroll .left_img ul li a:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    width: 142px;
+    height: 112px;
+    display: block;
+    background: rgba(0, 0, 0, 0.8);
+    left: 0;
+    z-index: 15;
+}
+.syslideBox .left_scroll .prev {
+    top: 10px;
+}
+.syslideBox .left_scroll .prev,
+.syslideBox .left_scroll .next {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 27px;
+    height: 15px;
+    background: url(../images/controls3.png) 0 0 no-repeat;
+    filter: alpha(opacity=50);
+    opacity: 0.7;
+}
+.syslideBox .left_scroll .left_img {
+    overflow: hidden;
+    width: 100%;
+    height: 448px;
+    position: absolute;
+    margin: 40px auto 0;
+}
+.syslideBox .left_scroll .next {
+    bottom: 10px;
+    background-position: 0 -15px;
+}
+
+#team_cont .syslideBox .right_scroll {
+    width: 1050px;
+    max-width: 85.7%;
+}
+.syslideBox .right_scroll {
+    position: relative;
+    z-index: 0;
+    width: 1050px;
+    max-width: 78%;
+}
+.syslideBox .right_scroll li {
+    zoom: 1;
+    vertical-align: middle;
+}
+.syslideBox .right_scroll img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
