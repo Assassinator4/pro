@@ -1,4 +1,4 @@
-/*重定义*/
+/*重定义头部*/
 .product{
   width: 100%;
   height: 600px;
@@ -387,6 +387,7 @@ margin-bottom: 12px;
   vertical-align: middle;
   border: 2px solid #090204;
   color: #090204;
+  /*090204*/
 }
 .classificmore--quidel::before{
   background: #EC6D88 none repeat scroll 0 0;
@@ -418,16 +419,17 @@ margin-bottom: 12px;
   margin: 21px;
   background: #fff;
   cursor: pointer;
-  border: 1px solid #5c5c5c;
+  border: 1px solid #53ACCB;
   padding: 7px;
   position: relative;
+
 }
 .product-1s ul li span{
   width: 272px;
-  height: 437px;
+  height: 447px;
   position: absolute;
   left: 7px;
-  top: 13px;
+  top: 7px;
   background-color:#DA1E78;
   display: none;
   opacity: 0.2;
@@ -436,9 +438,9 @@ margin-bottom: 12px;
 }
 .product-1s ul li img{
   width: 272px;
-  height: 443px;
-  padding-top: 6px;
-
+  height: 445px;
+  /*padding-top: 6px;*/
+  box-shadow:2px 2px 15px #9EAEBB;
 }
 .product-1s ul li p{
   width: 272px;
