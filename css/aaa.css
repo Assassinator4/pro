@@ -1,0 +1,350 @@
+@charset "UTF-8";
+/*body, html { font-size: 100%; 	padding: 0; margin: 0;}*/
+
+
+/**,*/
+/**:after,*/
+/**:before {*/
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+/*}*/
+
+
+/*.clearfix:before,*/
+/*.clearfix:after {*/
+    /*content: " ";*/
+    /*display: table;*/
+/*}*/
+
+/*.clearfix:after {*/
+    /*clear: both;*/
+/*}*/
+
+/*body{*/
+    /*background: #494A5F;*/
+    /*color: #D5D6E2;*/
+    /*font-weight: 500;*/
+    /*font-size: 1.05em;*/
+    /*font-family: "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;*/
+/*}*/
+/*.col-md-4 img{*/
+    /*transition: all 0.6s;*/
+    /*position: relative;*/
+/*}*/
+/*.col-md-4 img:hover{*/
+    /*transform:scale(1.5);*/
+    /*z-index: 998;*/
+/*}*/
+
+
+
+/*.container{*/
+    /*position: relative;*/
+/*}*/
+
+
+.achead{
+    background-color: #fff;
+}
+.achead ul {
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+}
+.achead ul .les{
+    margin-left: 10%;
+}
+.achead ul li {
+    float: left;
+    height: 110px;
+    width: 25%;
+    margin: 20px 30px 20px 30px;
+    padding: 0 30px 0 30px;
+    border-right: 1px #ddd solid;
+    overflow: hidden;
+}
+.achead ul li img {
+    width: 110px;
+    float: left;
+    margin-right: 20px;
+}
+.achead ul li h4 {
+    color: #3089a8;
+    font-size: 18px;
+}
+.achead ul li p {
+    color: #C36;
+    font-size: 22px;
+}
+.achead ul li span {
+    color: #888;
+    display: block;
+}
+.achead ul li span {
+    color: #888;
+    display: block;
+}
+
+
+
+
+#present {
+    text-align: center;
+    margin-top: 5%;
+}
+#present p{
+    letter-spacing:5px;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.centent #present h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+/*.fr{*/
+    /*float: right;*/
+/*}*/
+html,body {
+    color: #333;
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    border: 0;
+}
+
+body {
+    background: #53accb;
+    color: #666;
+    font-family: 'Microsoft Yahei', 'PingFangSC', sans-serif;
+}
+
+html, body, div, dl, dt, dd, ol, ul, li, h1, h2, h4, h5, h6, p, blockquote, pre, button, fieldset, form, input, legend, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #08acee;
+}
+
+button {
+    outline: 0;
+}
+
+img {
+    border: 0;
+}
+
+button,input,optgroup,select,textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #666;
+}
+
+a:hover {
+    color: #eee;
+}
+
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+}
+
+
+.trade-content {
+    /*padding: 30px 0;*/
+}
+
+.trade-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+.trade-title:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid;
+    border-color: #20B09F transparent transparent;
+}
+
+.trade-title:after {
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 3px;
+    background-color: #20B09F;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.trade-black {
+    height: 3050px;
+    /*background-color: #53accb;*/
+    /*background: url("../aboutsUs-images/u=4092472045,4232189431&fm=26&gp=0.jpg") no-repeat ;*/
+    /*background-size: cover ;*/
+    overflow: hidden;
+}
+
+.trade-box {
+    width: 1200px !important;
+    margin: 0 auto;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.trade-box-list {
+    /*display: flex;*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.trade-box-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    height: 600px;
+    background: no-repeat center;
+    background-size: 100% auto;
+}
+
+.trade-content .trade-box-item:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255,255,255,.6);
+    transition: all .4s cubic-bezier(.4, 0, .2, 1);
+}
+
+.trade-box-item a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+a, button, input, textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.item-logo {
+    margin: 0 auto;
+    display: block;
+}
+
+.trade-content .trade-box-item .item-logo {
+    position: relative;
+    margin-top: 120px;
+    transition: all .4s cubic-bezier(.4, 0, .2, 1);
+}
+
+.item-logo img {
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border:3px solid #ccc;
+    box-shadow: darkgrey 10px 10px 30px 5px ;
+}
+
+.item-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+}
+
+.trade-content .item-title:before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 20px;
+    border-bottom: 2px solid #fff;
+    margin: 0 auto 20px;
+    transition: all .4s cubic-bezier(.4, 0, .2, 1);
+}
+
+.item-text {
+    position: relative;
+    transition: all .4s cubic-bezier(.4, 0, .2, 1);
+    opacity: 0;
+    margin-top: 10px;
+}
+
+.item-text p {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.trade-content .trade-box-item:hover .item-text {
+    display: block;
+    opacity: 1;
+    margin-top: 0;
+}
+
+.trade-content .trade-box-item:hover:before {
+    /*background-color: rgba(32, 176, 159, .9);*/
+}
+
+.trade-content .trade-box-item:hover .item-logo {
+    margin-top: 80px;
+}
+
+.trade-content .trade-box-item:hover .item-title:before {
+    opacity: 0;
+    margin-bottom: 0;
+}
