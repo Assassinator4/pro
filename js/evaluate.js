@@ -4,7 +4,6 @@ $(function () {
     $.each($(".ga_wrap").children("a"),function () {
         $(this).on("click",function () {
             index = $(this).index();
-            console.log(index);
             $(".panel").css({"display":"block"});
             $(".panel .panel-main").children().attr("src","images/evaluate/"+index+".jpg");
         })
