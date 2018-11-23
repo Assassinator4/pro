@@ -1,15 +1,17 @@
 // 产品头部
 $(function () {
     //重定义
-    $(".city-ul>li").each(function () {
-        $(this).hover(function () {
-
+    $(".city-ul>li").each(function (index,ele) {
+         
+        $(ele).hover(function () {
+            $('.product-lett-ul li').eq(index).stop().fadeIn(1000).siblings().stop().fadeOut(1000);
             $(this).find("span").stop().slideUp();
             $(this).find("i").stop().animate({opacity:1},1200);
         }, function () {
             $(this).find("span").stop().slideDown();
             $(this).find("i").stop().animate({opacity:0});
             });
+
         })
 
 
