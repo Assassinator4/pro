@@ -1,12 +1,14 @@
 
 body{
   background: #f4f4f4;
+
 }
 /*重定义头部*/
 .product{
   width: 100%;
   height: 600px;
   /*background-color: rgba(255,218,185,0.5);*/
+
 }
 .city{
   width: 160px;

@@ -17,27 +17,27 @@ $(function () {
     });
 
     //导航栏吸顶
-    $(window).on("scroll", function () {
-        var scroll_top = $(window).scrollTop();
-        if (scroll_top > 0) {
-            //设置nav标签的样式
-            $(".head").css({
-                position: 'fixed',
-                top: 0,
-                "box-shadow": "0 3px 10px rgba(0,0,0,0.2)"
-            })
-        } else {
-            //设置nav标签的样式(恢复)
-            $(".head").css({
-                position: 'absolute',
-                top: "",
-                "box-shadow": "none"
-            });
-            //设置一个head大小一样的撑出页面
-            $(".header").css("display", "block");
-        }
-    });
-    //当打开窗时，logo固定
+    // $(window).on("scroll", function () {
+    //     var scroll_top = $(window).scrollTop();
+    //     if (scroll_top > 0) {
+    //         //设置nav标签的样式
+    //         $(".head").css({
+    //             position: 'fixed',
+    //             top: 0,
+    //             "box-shadow": "0 3px 10px rgba(0,0,0,0.2)"
+    //         })
+    //     } else {
+    //         //设置nav标签的样式(恢复)
+    //         $(".head").css({
+    //             position: 'absolute',
+    //             top: "",
+    //             "box-shadow": "none"
+    //         });
+    //         //设置一个head大小一样的撑出页面
+    //         $(".header").css("display", "block");
+    //     }
+    // });
+    //当打开窗口时，logo固定
     gudingLogo();
     //当窗口缩放时固定logo
     $(window).resize(function () {
@@ -162,7 +162,7 @@ $(function () {
         },1100);
     });
     //懒加载
-    $.imgLazyLoad();
+
 
 });
 

@@ -14,16 +14,13 @@ body {
 /*
 *头部样式和导航栏样式
 */
-.header {
-    width: 100%;
-    height: 80px;
-    display: none;
-}
 
 .head {
     width: 100%;
     height: 80px;
-    position: relative;
+    position: fixed;
+    top:0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     /*add*/
     z-index: 998;
 }
@@ -145,12 +142,20 @@ body {
 .nav ol > li img:hover {
     transform: scale(1.2);
 }
-
-
+.content{
+    width: 100%;
+    margin-top: 80px;
+}
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+}
 /*
 *baner(轮播图)
 */
 .banner{
+    margin-top: 80px;
     width: 100%;
     height: 700px;
     border: 1px solid #CCCCCC;
@@ -572,6 +577,7 @@ body {
     padding-top: 10px;
     width: 100%;
     height: 400px;
+    background: white;
 }
 
 .footer ul {
