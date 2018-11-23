@@ -10,7 +10,7 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/index.js"></script>
     <script src="js/product.js"></script>
-    <script src="js/lazyLoad.js"></script>
+    <script src="js/load-more.js"></script>
 
 
 </head>
@@ -116,27 +116,40 @@
 <!--最大的div-->
 <div>
   <!--第一张大图-->
-  <div class="product">
-      <div class="product-pic">
-          <div class="product-lett">--- INTERNATIONAL WEDDING ---</div>
-          <img src="images/product-img/ypkp_03.jpg" alt="">
-  </div>
-      <!--重定义-->
-      <div class="city">
-          <ul class="city-ul">
-              <li><a href="#"><span>广州</span><i>guangzhou</i></a></li>
-              <li><a href="#"><span>成都</span><i>chengdu</i></a></li>
-              <li><a href="#"><span>上海</span><i>shanghai</i></a></li>
-              <li><a href="#"><span>三亚</span><i>sanya</i></a></li>
-              <li><a href="#"><span>青岛</span><i>qingdao</i></a></li>
-              <li><a href="#"><span>丽江</span><i>lijiang</i></a></li>
-              <li><a href="#"><span>西藏</span><i>xizang</i></a></li>
-              <li><a href="#"><span>云南</span><i>yunnan</i></a></li>
-              <li><a href="#"><span>巴厘岛</span><i>balidao</i></a></li>
-              <li><a href="#"><span>吉普岛</span><i>jipudao</i></a></li>
-          </ul>
-          <div class="index"> <img src="images/product-img/index_26.gif" alt=""></div>
-      </div>
+      <div class="product">
+          <div class="product-pic">
+              <div class="product-lett">--- INTERNATIONAL WEDDING ---</div>
+              <ul class="product-lett-ul">
+                  <li class="buffer"><img src="./images/product-img/1-1FZ3.jpg" alt=""></li>
+                  <li><img src="./images/product-img/1-1FZ2.jpg" alt=""></li>
+                  <li><img src="./images/product-img/1-1FZ4.jpg" alt=""></li>
+                  <li><img src="./images/product-img/1-1FZ5.jpg" alt=""></li>
+                  <li><img src="./images/product-img/1-1FZ6.jpg" alt=""></li>
+                  <li><img src="./images/product-img/1-1FZ7.jpg" alt=""></li>
+                  <li><img src="./images/product-img/1-1FZ8.jpg" alt=""></li>
+                  <li><img src="./images/product-img/1-1FZ9.jpg" alt=""></li>
+                  <li><img src="./images/product-img/1-1FZ10.jpg" alt=""></li>
+                  <li><img src="./images/product-img/1-1FZ11.jpg" alt=""></li>
+              </ul>
+
+
+          </div>
+      <!--重定义头部-->
+          <div class="city">
+              <ul class="city-ul">
+                  <li><a href="#"><span>成都</span><i>chengdu</i></a></li>
+                  <li><a href="#"><span>广州</span><i>guangzhou</i></a></li>
+                  <li><a href="#"><span>上海</span><i>shanghai</i></a></li>
+                  <li><a href="#"><span>三亚</span><i>sanya</i></a></li>
+                  <li><a href="#"><span>青岛</span><i>qingdao</i></a></li>
+                  <li><a href="#"><span>丽江</span><i>lijiang</i></a></li>
+                  <li><a href="#"><span>西藏</span><i>xizang</i></a></li>
+                  <li><a href="#"><span>云南</span><i>yunnan</i></a></li>
+                  <li><a href="#"><span>巴厘岛</span><i>balidao</i></a></li>
+                  <li><a href="#"><span>吉普岛</span><i>jipudao</i></a></li>
+              </ul>
+              <div class="index"> <img src="images/product-img/index_26.gif" alt=""></div>
+          </div>
   </div>
 <!--分割线-->
   <div class="achead">
@@ -285,16 +298,21 @@
   </div>
 
   <!--更多图片分割线-->
-  <div class="row-1"></div>
+    <div class="row-1"></div>
+    <div class="row-2"></div>
   <div class="row">
     <div class="col-md-3 col-lg-2"><div class="newWorks">最新作品</div></div>
-    <div class="classificmore"><a class="quidel classificmore--quidel" href="#">查看更多</a></div>
+    <div class="classificmore">
+         <span class="line-1"></span>
+         <span class="line-2"></span>
+        <a class="quidel classificmore--quidel" href="#">查看更多</a>
+    </div>
     <div class="col-md-3 col-lg-2"><div class="newWorksE">Latest Works</div></div>
   </div>
 
   <!--更多图片排版-->
   <div class="product-1s">
-    <ul id="box">
+    <ul class="box" pagesize="8">
       <li><a href="#"><img src="images/product-img/1-1F221163120B8.jpg" alt="" ></a>
       <p><a href="">旅拍爱欧美范<i>PIAOVISION.STUDIO</i></a></p>
         <span></span>
@@ -396,18 +414,20 @@
     </ul>
 
     <!--懒加载分割线-->
-    <div class="product-lazyload">
-        <a href="#">
-            <p class="main"><i></i></p>
-            Loading More
-        </a>
-    </div>
+        <div class="product-lazyload">
+            <span class="icon-1"></span>
+            <!--<div class="row-1"></div>-->
+            <!--<div class="row-3"></div>-->
+        </div>
 
 
   </div>
 
 
-
+    <script type="text/javascript">
+        //调用显示更多插件
+        $.showMore(".box");
+    </script>
 </div>
 
 
@@ -416,148 +436,148 @@
 
 
 
-<!--<div class="footer">-->
-    <!--&lt;!&ndash;底部连接&ndash;&gt;-->
-    <!--<ul>-->
-        <!--<li><a href="#"><img src="images/bomtit_r1_c1.png"/> </a>-->
-            <!--<ol>-->
-                <!--<li><a href="#">飘的故事</a></li>-->
-                <!--<li><a href="#">飘的团队</a></li>-->
-                <!--<li><a href="#">关于我们</a></li>-->
-                <!--<li><a href="#">联系我们</a></li>-->
-            <!--</ol>-->
-        <!--</li>-->
-        <!--<li><a href="#"><img src="images/bomtit_r1_c4.png"/> </a>-->
-            <!--<ol>-->
-                <!--<li><a href="#">主题婚纱</a></li>-->
-                <!--<li><a href="#">客片欣赏</a></li>-->
-                <!--<li><a href="#">每月客照集</a></li>-->
-                <!--<li><a href="#">每月之最</a></li>-->
-            <!--</ol>-->
-        <!--</li>-->
-        <!--<li><a href="#"><img src="images/bomtit_r1_c10.png"/></a>-->
-            <!--<ol>-->
-                <!--<li><a href="#">最新活动</a></li>-->
-                <!--<li><a href="#">服务报价</a></li>-->
-                <!--<li><a href="#">服务流程</a></li>-->
-                <!--<li><a href="#">三亚婚纱</a></li>-->
-            <!--</ol>-->
-        <!--</li>-->
-        <!--<li><a href="#"><img src="images/bomtit_r1_c14.png"/></a>-->
-            <!--<ol>-->
-                <!--<li><a href="#">服务小贴士</a></li>-->
-                <!--<li><a href="#">新娘课堂</a></li>-->
-                <!--<li><a href="#">客户评价</a></li>-->
-                <!--<li><a href="#">婚纱照攻略</a></li>-->
-            <!--</ol>-->
-        <!--</li>-->
-        <!--<li><a href="#"><img src="images/bomtit_r1_c20.png"/></a>-->
-            <!--<ol>-->
-                <!--<li><a href="#">主题景点</a></li>-->
-                <!--<li><a href="#">主题清吧</a></li>-->
-                <!--<li><a href="#">主题客栈</a></li>-->
-                <!--<li><a href="#">主题套餐</a></li>-->
-            <!--</ol>-->
-        <!--</li>-->
-    <!--</ul>-->
-    <!--&lt;!&ndash;版权&ndash;&gt;-->
-    <!--<div class="copy">-->
-        <!--<div class="copyright">-->
-            <!--<p>-->
-                <!--友情链接:-->
-                <!--<a href='http://www.bjcshy.com/' target='_blank'>婚纱摄影工作室</a>-->
+<div class="footer">
+    <!--底部连接-->
+    <ul>
+        <li><a href="#"><img src="images/bomtit_r1_c1.png"/> </a>
+            <ol>
+                <li><a href="#">飘的故事</a></li>
+                <li><a href="#">飘的团队</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ol>
+        </li>
+        <li><a href="#"><img src="images/bomtit_r1_c4.png"/> </a>
+            <ol>
+                <li><a href="#">主题婚纱</a></li>
+                <li><a href="#">客片欣赏</a></li>
+                <li><a href="#">每月客照集</a></li>
+                <li><a href="#">每月之最</a></li>
+            </ol>
+        </li>
+        <li><a href="#"><img src="images/bomtit_r1_c10.png"/></a>
+            <ol>
+                <li><a href="#">最新活动</a></li>
+                <li><a href="#">服务报价</a></li>
+                <li><a href="#">服务流程</a></li>
+                <li><a href="#">三亚婚纱</a></li>
+            </ol>
+        </li>
+        <li><a href="#"><img src="images/bomtit_r1_c14.png"/></a>
+            <ol>
+                <li><a href="#">服务小贴士</a></li>
+                <li><a href="#">新娘课堂</a></li>
+                <li><a href="#">客户评价</a></li>
+                <li><a href="#">婚纱照攻略</a></li>
+            </ol>
+        </li>
+        <li><a href="#"><img src="images/bomtit_r1_c20.png"/></a>
+            <ol>
+                <li><a href="#">主题景点</a></li>
+                <li><a href="#">主题清吧</a></li>
+                <li><a href="#">主题客栈</a></li>
+                <li><a href="#">主题套餐</a></li>
+            </ol>
+        </li>
+    </ul>
+    <!--版权-->
+    <div class="copy">
+        <div class="copyright">
+            <p>
+                友情链接:
+                <a href='http://www.bjcshy.com/' target='_blank'>婚纱摄影工作室</a>
 
-                <!--<a href='http://heyuan.tianqi.com/' target='_blank'>河源天气预报</a>-->
+                <a href='http://heyuan.tianqi.com/' target='_blank'>河源天气预报</a>
 
-                <!--<a href='http://www.logobiaozhi.com' target='_blank'>公司LOGO设计</a>-->
+                <a href='http://www.logobiaozhi.com' target='_blank'>公司LOGO设计</a>
 
-                <!--<a href='http://www.shengphoto.com/' target='_blank'>青岛婚纱摄影</a>-->
+                <a href='http://www.shengphoto.com/' target='_blank'>青岛婚纱摄影</a>
 
-                <!--<a href='http://www.mnls020.com' target='_blank'>广州婚纱摄影哪家好</a>-->
+                <a href='http://www.mnls020.com' target='_blank'>广州婚纱摄影哪家好</a>
 
-                <!--<a href='http://www.xmdcxa.com' target='_blank'>厦门大城小爱</a>-->
+                <a href='http://www.xmdcxa.com' target='_blank'>厦门大城小爱</a>
 
-                <!--<a href='http://beijing.napai.cn/' target='_blank'>北京婚纱摄影</a>-->
+                <a href='http://beijing.napai.cn/' target='_blank'>北京婚纱摄影</a>
 
-                <!--<a href='http://www.7jiaqi.com/' target='_blank'>马尔代夫</a>-->
+                <a href='http://www.7jiaqi.com/' target='_blank'>马尔代夫</a>
 
-                <!--<a href='https://www.formyrose.com/' target='_blank'>求婚钻戒</a>-->
+                <a href='https://www.formyrose.com/' target='_blank'>求婚钻戒</a>
 
-                <!--<a href='https://cn.starcruises.com/' target='_blank'>游轮婚礼</a>-->
+                <a href='https://cn.starcruises.com/' target='_blank'>游轮婚礼</a>
 
-                <!--<a href='http://gz.hunlimao.com' target='_blank'>广州婚纱摄影</a>-->
+                <a href='http://gz.hunlimao.com' target='_blank'>广州婚纱摄影</a>
 
-                <!--<a href='http://www.milan-bride.com' target='_blank'>上海婚纱摄影</a>-->
+                <a href='http://www.milan-bride.com' target='_blank'>上海婚纱摄影</a>
 
-                <!--<a href='http://www.deyetown.com/' target='_blank'>成都婚纱照价格</a>-->
+                <a href='http://www.deyetown.com/' target='_blank'>成都婚纱照价格</a>
 
-                <!--<a href='http://www.sycare.cn' target='_blank'>上海金牌月嫂</a>-->
+                <a href='http://www.sycare.cn' target='_blank'>上海金牌月嫂</a>
 
-                <!--<a href='http://www.hunliji.com' target='_blank'>拍婚纱照</a>-->
+                <a href='http://www.hunliji.com' target='_blank'>拍婚纱照</a>
 
-                <!--<a href='http://www.shuijingzhilian.com.cn/' target='_blank'>北京婚纱摄影</a>-->
+                <a href='http://www.shuijingzhilian.com.cn/' target='_blank'>北京婚纱摄影</a>
 
-                <!--<a href='http://www.ido99.cn' target='_blank'>海外婚礼</a>-->
+                <a href='http://www.ido99.cn' target='_blank'>海外婚礼</a>
 
-                <!--<a href='http://www.rsdyy.com/' target='_blank'>人生感悟</a>-->
+                <a href='http://www.rsdyy.com/' target='_blank'>人生感悟</a>
 
-                <!--<a href='http://www.huazhen2008.com/' target='_blank'>情感咨询</a>-->
+                <a href='http://www.huazhen2008.com/' target='_blank'>情感咨询</a>
 
-                <!--<a href='http://www.song1688.cn/' target='_blank'>三亚租车</a>-->
+                <a href='http://www.song1688.cn/' target='_blank'>三亚租车</a>
 
-                <!--<a href='http://www.lmsl168.com/' target='_blank'>海口租车</a>-->
+                <a href='http://www.lmsl168.com/' target='_blank'>海口租车</a>
 
-                <!--<a href='http://www.tell520.com/' target='_blank'>求婚公司</a>-->
+                <a href='http://www.tell520.com/' target='_blank'>求婚公司</a>
 
-                <!--<a href='http://www.panzi.cc' target='_blank'>盘子女人坊</a>-->
+                <a href='http://www.panzi.cc' target='_blank'>盘子女人坊</a>
 
-                <!--<a href='http://www.bjcshy.com' target='_blank'>婚纱摄影工作室</a>-->
+                <a href='http://www.bjcshy.com' target='_blank'>婚纱摄影工作室</a>
 
-                <!--<a href='https://romantic214.com' target='_blank'>求婚</a>-->
+                <a href='https://romantic214.com' target='_blank'>求婚</a>
 
-                <!--<a href='http://www.dear5201314.com/' target='_blank'>厦门婚纱摄影</a>-->
+                <a href='http://www.dear5201314.com/' target='_blank'>厦门婚纱摄影</a>
 
-                <!--<a href='http://www.zocai.com/' target='_blank'>佐卡伊结婚钻戒</a>-->
+                <a href='http://www.zocai.com/' target='_blank'>佐卡伊结婚钻戒</a>
 
-                <!--<a href='http://www.zbird.com/' target='_blank'>结婚对戒</a>-->
+                <a href='http://www.zbird.com/' target='_blank'>结婚对戒</a>
 
-                <!--<a href='http://www.lackeeden.com/' target='_blank'>定做西装</a>-->
+                <a href='http://www.lackeeden.com/' target='_blank'>定做西装</a>
 
-                <!--<a href='http://www.51xunai.cn/' target='_blank'>找对象</a>-->
+                <a href='http://www.51xunai.cn/' target='_blank'>找对象</a>
 
-                <!--<a href='http://www.alihuahua.com' target='_blank'>鲜花速递</a>-->
+                <a href='http://www.alihuahua.com' target='_blank'>鲜花速递</a>
 
-                <!--<a href='https://www.eduoduo.com.cn/' target='_blank'>花店</a>-->
+                <a href='https://www.eduoduo.com.cn/' target='_blank'>花店</a>
 
-                <!--<a href='http://www.weixintouxiang.cn/' target='_blank'>微信头像男</a>-->
+                <a href='http://www.weixintouxiang.cn/' target='_blank'>微信头像男</a>
 
-                <!--<a href='http://www.15880.com/' target='_blank'>拉拉交友</a>-->
+                <a href='http://www.15880.com/' target='_blank'>拉拉交友</a>
 
-                <!--<a href='http://www.zhenai.com/zhenghun' target='_blank'>三亚征婚</a>-->
+                <a href='http://www.zhenai.com/zhenghun' target='_blank'>三亚征婚</a>
 
-                <!--<a href='http://www.zhenai.com/jiaoyou' target='_blank'>三亚交友</a>-->
+                <a href='http://www.zhenai.com/jiaoyou' target='_blank'>三亚交友</a>
 
-                <!--<a href='http://city.zhenai.com' target='_blank'>三亚相亲</a>-->
+                <a href='http://city.zhenai.com' target='_blank'>三亚相亲</a>
 
-                <!--<br>-->
+                <br>
 
-                <!--<a href="http://www.piaovision.com">三亚飘视觉婚纱摄影</a>-->
-                <!--有限公司 ALL RIGHT RESERVED.-->
-                <!--<a href="/sitemap.html">网站地图</a>-->
-                <!--<br>-->
-                <!--本站关键词： <a href="/">三亚婚纱摄影</a>-->
-                <!--海南婚纱摄影 三亚婚纱摄影工作室-->
-                <!--<a href="/kepian/5819.html">三亚海景婚纱摄影</a>-->
-                <!--<a href="/kepian/5841.html">三亚外景婚纱摄影</a>-->
-                <!--<a href="/tips/5859.html">三亚婚纱店</a> 三亚婚纱照-->
-                <!--<a href="http://webscan.360.cn/index/checkwebsite/url/www.piaovision.com">360网站安全检测平台</a>-->
+                <a href="http://www.piaovision.com">三亚飘视觉婚纱摄影</a>
+                有限公司 ALL RIGHT RESERVED.
+                <a href="/sitemap.html">网站地图</a>
+                <br>
+                本站关键词： <a href="/">三亚婚纱摄影</a>
+                海南婚纱摄影 三亚婚纱摄影工作室
+                <a href="/kepian/5819.html">三亚海景婚纱摄影</a>
+                <a href="/kepian/5841.html">三亚外景婚纱摄影</a>
+                <a href="/tips/5859.html">三亚婚纱店</a> 三亚婚纱照
+                <a href="http://webscan.360.cn/index/checkwebsite/url/www.piaovision.com">360网站安全检测平台</a>
 
-        <!--</div>-->
-        <!--<div class="footer-Photo">-->
-            <!--<img src="images/banner.fw_r1_c2.png" alt="">-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
+        </div>
+        <div class="footer-Photo">
+            <img src="images/banner.fw_r1_c2.png" alt="">
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
