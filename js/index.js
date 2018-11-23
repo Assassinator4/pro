@@ -77,17 +77,52 @@ $(function () {
     var timer;
     var index = 0;
     var flag = 0;
+    var listL = $(".zhixiang .left").children();
+    var listR = $(".zhixiang .right").children();
 
     function aotuPlayer() {
         timer = setInterval(next, 2000);
     }
 
     aotuPlayer();
-    $(".left").click(function () {
+
+    function zhixiangPlayer() {
+
+        listL.eq(2).animate({
+            "opacity": "0"
+        }).animate({
+            "opacity": "0.9"
+        }, 400).siblings().eq(1).animate({
+            "opacity": "0"
+        }).animate({
+            "opacity": "0.9"
+        }, 800).siblings().eq(0).animate({
+            "opacity": "0"
+        }).animate({
+            "opacity": "0.9"
+        }, 1200);
+
+
+        listR.eq(0).animate({
+            "opacity": "0"
+        }).animate({
+            "opacity": "0.9"
+        }, 400).siblings().eq(0).animate({
+            "opacity": "0"
+        }).animate({
+            "opacity": "0.9"
+        }, 800).siblings().eq(1).animate({
+            "opacity": "0"
+        }).animate({
+            "opacity": "0.9"
+        }, 1200);
+    }
+
+    $(".banner .left").children().eq(1).click(function () {
         $(".banner ul").stop();
         pre();
     });
-    $(".right").click(function () {
+    $(".banner .right").children().eq(1).click(function () {
         $(".banner ul").stop();
         next();
     });
@@ -118,12 +153,44 @@ $(function () {
         $(".banner ol li").eq(flag).addClass("active").siblings().removeClass("active");
     }
 
+    $(".left").stop().hover(function () {
+        listL.eq(0).stop().animate({
+            "opacity": 0
+        });
+        listL.eq(2).stop().animate({
+            "opacity": 0
+        })
+    }, function () {
+        listL.eq(0).stop().animate({
+            "opacity": 0.9
+        });
+        listL.eq(2).stop().animate({
+            "opacity": 0.9
+        })
+    });
+    $(".right").stop().hover(function () {
+        listR.eq(0).stop().animate({
+            "opacity": 0
+        });
+        listR.eq(2).stop().animate({
+            "opacity": 0
+        })
+    }, function () {
+        listR.eq(0).stop().animate({
+            "opacity": 0.9
+        });
+        listR.eq(2).stop().animate({
+            "opacity": 0.9
+        })
+    });
+
     $(".banner").hover(function () {
         clearInterval(timer);
-        $(".banner p span").css({"display": "block"});
+        $(".banner .zhixiang span").css({"display": "inline-block"});
+        zhixiangPlayer();
     }, function () {
         aotuPlayer();
-        $(".banner p span").css("display", "none");
+        $(".banner .zhixiang span").css("display", "none");
     });
     $(".banner ol li").click(function () {
         flag = $(this).index();

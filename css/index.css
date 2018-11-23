@@ -152,7 +152,7 @@ body {
 */
 .banner{
     width: 100%;
-    height: 550px;
+    height: 700px;
     border: 1px solid #CCCCCC;
     overflow: hidden;
     position: relative;
@@ -168,10 +168,11 @@ body {
     float: left;
 }
 .banner img{
+    margin: 0 auto;
     width: 100%;
-    height: 550px;
+    height: 700px;
 }
-.banner p{
+.banner .zhixiang{
     display: block;
     width: 80%;
     height: 120px;
@@ -187,17 +188,21 @@ body {
 
 .banner span{
     display: none;
-    width: 120px;
+/*    width: 120px;
     height: 120px;
-    background: #333333;
+    background: #333333;*/
     text-align: center;
-    opacity: 0.6;
+    opacity: 0.75;
     transition: all 1s ;
     cursor: pointer;
 }
-.banner span:hover{
-    opacity: 1;
+.banner span img{
+    width: 40px;
+    height: 80px;
 }
+/*.banner span:hover{
+    opacity: 1;
+}*/
 .left{
     float: left;
 }
