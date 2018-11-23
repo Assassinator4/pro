@@ -2,13 +2,11 @@ $(function () {
     //点击事件，触发下拉和改变样式,其中当前页面不改变
     //还可以获取index，使用eq设置
     //1.先给当前页面有.on样式的li加个.not
-    //2.
     function setNot() {
         return $(".on").addClass("not");
     }
 
     setNot();
-
     $(".nav ul>li:not('.no')").hover(function () {
         var that = $(this);
         that.addClass("on").siblings().not(".not").removeClass("on");
@@ -18,16 +16,6 @@ $(function () {
         $(".sec").css("display", "none");
     });
 
-    //导航栏下拉图片排版并居中
-    /*$(".nav ol>li").each(function (i, ele) {
-
-        /!*var num = i ;
-        console.log(num);*!/
-        $(this).css({
-            left: -num * 120,
-            top: num*10,
-        })
-    })*/
     //导航栏吸顶
     $(window).on("scroll", function () {
         var scroll_top = $(window).scrollTop();
@@ -72,57 +60,27 @@ $(function () {
             })
         }
     }
-
     //banner(轮播图)
     var timer;
     var index = 0;
     var flag = 0;
-    var listL = $(".zhixiang .left").children();
-    var listR = $(".zhixiang .right").children();
-
     function aotuPlayer() {
         timer = setInterval(next, 2000);
     }
-
     aotuPlayer();
-
     function zhixiangPlayer() {
 
-        listL.eq(2).animate({
+        $(".zhixiang").animate({
             "opacity": "0"
         }).animate({
             "opacity": "0.9"
-        }, 400).siblings().eq(1).animate({
-            "opacity": "0"
-        }).animate({
-            "opacity": "0.9"
-        }, 800).siblings().eq(0).animate({
-            "opacity": "0"
-        }).animate({
-            "opacity": "0.9"
-        }, 1200);
-
-
-        listR.eq(0).animate({
-            "opacity": "0"
-        }).animate({
-            "opacity": "0.9"
-        }, 400).siblings().eq(0).animate({
-            "opacity": "0"
-        }).animate({
-            "opacity": "0.9"
-        }, 800).siblings().eq(1).animate({
-            "opacity": "0"
-        }).animate({
-            "opacity": "0.9"
-        }, 1200);
+        }, 400);
     }
-
-    $(".banner .left").children().eq(1).click(function () {
+    $(".banner .left").click(function () {
         $(".banner ul").stop();
         pre();
     });
-    $(".banner .right").children().eq(1).click(function () {
+    $(".banner .right").click(function () {
         $(".banner ul").stop();
         next();
     });
@@ -138,7 +96,6 @@ $(function () {
         $(".banner ul").animate({"left": -(index * 100) + "%"});
         $(".banner ol li").eq(flag).addClass("active").siblings().removeClass("active");
     }
-
     function next() {
         index++;
         flag++;
@@ -152,37 +109,6 @@ $(function () {
         $(".banner ul").animate({"left": -(index * 100) + "%"});
         $(".banner ol li").eq(flag).addClass("active").siblings().removeClass("active");
     }
-
-    $(".left").stop().hover(function () {
-        listL.eq(0).stop().animate({
-            "opacity": 0
-        });
-        listL.eq(2).stop().animate({
-            "opacity": 0
-        })
-    }, function () {
-        listL.eq(0).stop().animate({
-            "opacity": 0.9
-        });
-        listL.eq(2).stop().animate({
-            "opacity": 0.9
-        })
-    });
-    $(".right").stop().hover(function () {
-        listR.eq(0).stop().animate({
-            "opacity": 0
-        });
-        listR.eq(2).stop().animate({
-            "opacity": 0
-        })
-    }, function () {
-        listR.eq(0).stop().animate({
-            "opacity": 0.9
-        });
-        listR.eq(2).stop().animate({
-            "opacity": 0.9
-        })
-    });
 
     $(".banner").hover(function () {
         clearInterval(timer);
@@ -216,7 +142,7 @@ $(function () {
                 "opacity":1
             },100);
         },1000)
-    },1500);
+    },5000);
     $(".index-click").on("click",function () {
         $(".panel-in").animate({
             "opacity":0
