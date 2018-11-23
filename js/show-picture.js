@@ -9,7 +9,7 @@ $(function () {
             // console.log(index);
             $(this).addClass("font").siblings().removeClass("font");
 
-            // $(".li-img img").attr("src","../pro/images/product-img/3/1-1F"+(i+3)+".jpg").fadeIn(1000);
+            // $(".li-img img").attr("src","../pro/intro-img/product-img/3/1-1F"+(i+3)+".jpg").fadeIn(1000);
 
             $(".li-img").eq(i).fadeIn(500).siblings().fadeOut(500);
         })
