@@ -12,7 +12,7 @@ $(function () {
     $(".v-click").on("click",function () {
         $(".panel").css({"display":"none"});
     });
-    
+
     $(".v-left").on("click",function () {
         index --;
         if (index > 100) index = 1;

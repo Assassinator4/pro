@@ -196,9 +196,48 @@ $(function () {
         flag = $(this).index();
         $(".banner ul").animate({"left": -(flag * 100) + "%"});
         $(".banner ol li").eq(flag).addClass("active").siblings().removeClass("active");
-    })
+    });
+
+    //弹出框
+    setTimeout(function () {
+        $(".index-panel").css({"display":"block"});
+        $(".index-panel .index-panel-main").css({
+            "width":0,
+            "height":0
+        }).animate({
+          "width":650,
+          "height":650
+        },1000,"swing");
+        setTimeout(function () {
+            $(".panel-in").animate({
+                "opacity":1
+            },500);
+            $(".index-click").animate({
+                "opacity":1
+            },100);
+        },1000)
+    },1500);
+    $(".index-click").on("click",function () {
+        $(".panel-in").animate({
+            "opacity":0
+        },100);
+        $(".index-click").animate({
+            "opacity":0
+        },100);
+        $(".index-panel .index-panel-main").css({
+            "width":650,
+            "height":650
+        }).animate({
+            "width":0,
+            "height":0
+        },1000);
+        setTimeout(function () {
+            $(".index-panel").css({"display":"none"});
+        },1100);
+    });
     //懒加载
     $.imgLazyLoad();
+
 });
 
 
