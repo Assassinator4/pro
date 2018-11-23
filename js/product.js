@@ -30,10 +30,10 @@ $(function () {
             "background": "#EC6D88"
         });
         $(this).find(".anli-pica").css({
-            "background": "url(images/product-img/index-5.png)no-repeat center "
+            "background": "url(intro-img/product-img/index-5.png)no-repeat center "
         });
         $(this).find(".anli-picb").css({
-            "background": "url(images/product-img/index-4.png)no-repeat center"
+            "background": "url(intro-img/product-img/index-4.png)no-repeat center"
         });
         $(this).find("img").addClass("active");
     }, function () {
@@ -49,10 +49,10 @@ $(function () {
             "background": "#fff"
         })
         $(this).find(".anli-pica").css({
-            "background": "url(images/product-img/index-2.png)no-repeat center"
+            "background": "url(intro-img/product-img/index-2.png)no-repeat center"
         });
         $(this).find(".anli-picb").css({
-            "background": "url(images/product-img/index-3.png)no-repeat center"
+            "background": "url(intro-img/product-img/index-3.png)no-repeat center"
         });
         $(this).find("img").removeClass("active");
 

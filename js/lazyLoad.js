@@ -24,7 +24,7 @@
                             imgs[i].src = imgs[i].getAttribute('data-img');
                             $(imgs[i]).removeClass('lazyload');
                         }else{
-                            // new Image().src = imgs[i].getAttribute('data-img');
+                            // new Image().src = aboutUs-imgs[i].getAttribute('data-img');
                         }
                     }
                 },100);
