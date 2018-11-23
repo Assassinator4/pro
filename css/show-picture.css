@@ -7,15 +7,18 @@
 }
 
 /*左边图片展示*/
-.current-img{
-    z-index:10;
-}
 .work-detail .photo-show{
     width: calc(100% - 450px);
     height: 100%;
     position: fixed;
     float: left;
     text-align: center;
+}
+.photo-show .big-slider{
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    height: 800px;
 }
 .work-detail .photo-show .slides{
     position: relative;
@@ -31,12 +34,8 @@
     width: 100%;
     height: 100%;
 }
-.work-detail .photo-show #big-slider .slides li img {
-    width: 500px;
-    height: 600px;
-}
 /*两个按钮*/
-.work-detail .photo-show #big-slider .flex-prev{
+.work-detail .photo-show  .flex-prev{
     position: fixed;
     left: 5px;
     top: 50%;
@@ -44,7 +43,7 @@
     width: 60px;
     height: 60px;
 }
-.work-detail .photo-show #big-slider .flex-next{
+.work-detail .photo-show .flex-next{
     position: fixed;
     right: 460px;
     top: 50%;

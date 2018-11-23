@@ -20,9 +20,8 @@ $(function () {
         if (index >5) index = 0;
         else if(index < 0) index = 5;
         console.log(index);
-        // $(".slides li").eq(index).addClass("current-img").siblings().removeClass("current-img")
         $(".thumbnail ol>li").eq(index).addClass("font").siblings().removeClass("font");
-        $(".li-img").eq(index).fadeIn(500).siblings().fadeOut(500);
+        $(".li-img").eq(index).fadeIn(200).siblings().fadeOut(200);
     })
 
     $(".flex-next").on("click",function () {
@@ -30,9 +29,8 @@ $(function () {
         if (index >5) index = 0;
         else if(index < 0) index = 5;
         console.log(index);
-        // $(".slides li").eq(index).addClass("current-img").siblings().removeClass("current-img")
         $(".thumbnail ol>li").eq(index).addClass("font").siblings().removeClass("font");
-        $(".li-img").eq(index).fadeIn(500).siblings().fadeOut(500);
+        $(".li-img").eq(index).fadeIn(200).siblings().fadeOut(200);
     })
     
 });
