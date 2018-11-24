@@ -99,7 +99,8 @@ $(function () {
 //小按钮
   $(".costom-mpage>ul").children().each(function () {
     $(this).hover(function () {
-      $(this).addClass("hover").siblings().removeClass("hover")
+      $(this).addClass("hover").siblings().removeClass("hover");
+
     },function () {
       $(this).removeClass("hover");
     })

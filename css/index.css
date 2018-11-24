@@ -14,13 +14,17 @@ body {
 /*
 *头部样式和导航栏样式
 */
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+}
 
 .head {
     width: 100%;
     height: 80px;
     position: fixed;
-    top:0;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+
     /*add*/
     z-index: 998;
 }
@@ -78,7 +82,9 @@ body {
 .nav ul > li:nth-child(5) {
     border-right: none;
 }
-
+.nav ul > li:nth-child(1) {
+    border-left: 1px solid #3089a8;
+}
 .nav ul > li span {
     font-size: 12px;
     line-height: 0px;
@@ -104,7 +110,7 @@ body {
 }
 
 .sec {
-    background: antiquewhite;
+    background: rgba(250,235,215,0.5);
     position: absolute;
     left: 0;
     top: 80px;
@@ -142,20 +148,12 @@ body {
 .nav ol > li img:hover {
     transform: scale(1.2);
 }
-.content{
-    width: 100%;
-    margin-top: 80px;
-}
-.header {
-    width: 100%;
-    height: 80px;
-    display: block;
-}
+
+
 /*
 *baner(轮播图)
 */
 .banner{
-    margin-top: 80px;
     width: 100%;
     height: 700px;
     border: 1px solid #CCCCCC;
@@ -326,6 +324,9 @@ body {
     padding: 0px 30px 0px 30px;
     border-right: 1px #ddd solid;
     overflow: hidden;
+}
+.achead ul>li:last-child{
+    border-right: none;
 }
 .achead ul>li a img{
     width: 115px;
@@ -577,7 +578,6 @@ body {
     padding-top: 10px;
     width: 100%;
     height: 400px;
-    background: white;
 }
 
 .footer ul {
