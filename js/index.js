@@ -161,7 +161,24 @@ $(function () {
             $(".index-panel").css({"display":"none"});
         },1100);
     });
-    //懒加载
+    //返回底部
+    // 悬浮窗口
+    $(".yb_count").hover(function() {
+        $(".yb_count").css("right", "5px");
+        $(".yb_bar .yb_ercode").css('height', '200px');
+    }, function() {
+        $(".yb_count").css("right", "-127px");
+        $(".yb_bar .yb_ercode").css('height', '53px');
+    });
+    // 返回顶部
+    $(".yb_top").click(function() {
+        $("html,body").animate({
+            'scrollTop': '0px'
+        }, 300)
+    });
+    $(".yb_QQ").click(function () {
+        $(".yb_QQ a").attr("href","http://www.520it.com/")
+    })
 
 });
 

@@ -32,5 +32,8 @@ $(function () {
         $(".thumbnail ol>li").eq(index).addClass("font").siblings().removeClass("font");
         $(".li-img").eq(index).fadeIn(200).siblings().fadeOut(200);
     })
-    
+    $(".bds_more").on("click",function () {
+        window.history.back();
+    })
+
 });

@@ -398,6 +398,14 @@ margin-bottom: 12px;
 
   position: relative;
 }
+.product-1s .click-me{
+  width: 200px;
+  height: 400px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 100;
+}
 .product-1s ul{
   max-width: 1260px;
   height: 100%;

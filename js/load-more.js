@@ -14,7 +14,7 @@
         if (selector == undefined) { selector = ".box" }
         $(selector).each(function () {
             var pagesize = $(this).attr("pagesize") || 10;
-            console.log(pagesize);
+            // console.log(pagesize);
             $(this).find("li:lt("+pagesize+")").show();
             var $children = $(this).children();
             if ($children.length > pagesize) {
